@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 942px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 44px;
+}
+.naw-li{
+    display: flex;
+    justify-content: space-around;
+}
+.li{
+    margin-left: 20px;
+    list-style: none;
+}
+.li:first-child{
+    margin: 0;
+}
+.naw{
+    font-size: 14px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #FED136;
+    text-decoration-line: none;
+}
+.logo{
+    font-family: Bilbo Swash Caps;
+    font-size: 36px;
+    color: #FED136;
+}
+.headline{
+    font-size: 40px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    border: 3px solid #FED136;
+    border-radius: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+.img{
+    position: absolute;
+    left: 15.3px;
+    top: 17.5px;
+}
+.img-lock{
+    top: 15px;
+    left: 20px;
+}
+.img-basket{
+    top: 15px;
+    left: 16px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.info-list{
+    width: 274px;
+    list-style: none;
+    text-align: center;
+}
+.info-headline{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+.info-text{
+    font-family: RobotoSlab;
+    line-height: 16px;
+    font-size: 14px;
+    color: #777777;
+}
+.send-message{
+    display: flex;
+    justify-content: center;
+}
+.criterias{
+    display: flex;
+    flex-direction: column;
+}
+.text-message{
+    width: 458px;
+    height: 212px;
+}
+.input{
+    margin-top: 28px;
+    width: 455px;
+    height: 53px;
+}
+.input:first-child{
+    margin: 0;
+}
+.textarea{
+    margin-left: 27px;
+}
+.message{
+    background-color: #222222;
+    height: 679px;
+}
+.second{
+    padding: 92px;
+    padding-bottom: 114px;
+    color: #FFFFFF;
+}
+.inform{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 20px;
+    color: #BBBBBB;
+    text-transform: uppercase;
+}
+.placeToMessage{
+    padding-top: 14px;
+}
+.button{
+    background-color: #FED136;
+    border-radius: 5px;
+    border: 0px solid #FED136;
+    width: 242px;
+    height: 68px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: relative;
+}
+.button:hover{
+    background-color: #be9b1a;   
+    cursor: pointer;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    top: -8px;
+    left: -8px;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    top: 56px;
+    left: 232px;
+}
+.submit{
+    text-align: center;
+    margin-top: 27px;
+}
+.checkbox-fake{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid blue;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.checkbox-fake::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.checkbox-original:checked ~ .checkbox-fake::after{
+    background-color: blue;
+}
+.checkbox-original{
+    display: none;
+}
